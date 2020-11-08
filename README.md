@@ -1,4 +1,4 @@
-# JavPWGen with a simple html implementation. 
+# JS-PWGen with a simple html implementation. 
 Simple JavaScript Passsword Generator.
 
 # Includes

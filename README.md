@@ -9,4 +9,3 @@ index.html (Sample implementation of the js in html)
 style.css (Making the generator look pretty :))
 
 # GNU License as always.
-# sZ

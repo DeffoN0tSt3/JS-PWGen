@@ -1,68 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible"
-				content="ie=edge">
-	<link rel="stylesheet"
-				href="style.css">
-	<script defer
-					src="main.js"></script>
-	<title>Java PWD Gen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <meta name="description" content="A simple and secure password generator.">
+  
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+
+  <title>JavaScript Password Generator</title>
 </head>
 
 <body>
-	<div class="container">
-		<h2>Password Generator</h2>
-		<div class="result-container">
-			<span id="result"></span>
-			<button class="btn"
-							id="clipboard">
-				🔣
-			</button>
-		</div>
-		<div class="settings">
-			<div class="setting">
-				<label>Password length</label>
-				<input type="number"
-							 id="length"
-							 min='4'
-							 max='20'
-							 value='20' />
-			</div>
-			<div class="setting">
-				<label>Include uppercase letters</label>
-				<input type="checkbox"
-							 id="uppercase"
-							 checked />
-			</div>
-			<div class="setting">
-				<label>Include lowercase letters</label>
-				<input type="checkbox"
-							 id="lowercase"
-							 checked />
-			</div>
-			<div class="setting">
-				<label>Include numbers</label>
-				<input type="checkbox"
-							 id="numbers"
-							 checked />
-			</div>
-			<div class="setting">
-				<label>Include symbols</label>
-				<input type="checkbox"
-							 id="symbols"
-							 checked />
-			</div>
-		</div>
-		<button class="btn btn-large"
-						id="generate">
-			Generate password
-		</button>
-	</div>
-
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container">
+      <span id="result"></span>
+      <button class="btn" id="clipboard" aria-label="Copy password to clipboard">
+        📋
+      </button>
+    </div>
+    <form class="settings">
+      <fieldset class="setting">
+        <label for="length">Password length</label>
+        <input type="number" id="length" min='4' max='20' value='20' />
+      </fieldset>
+      <fieldset class="setting">
+        <label for="uppercase">Include uppercase letters</label>
+        <input type="checkbox" id="uppercase" checked />
+      </fieldset>
+      <fieldset class="setting">
+        <label for="lowercase">Include lowercase letters</label>
+        <input type="checkbox" id="lowercase" checked />
+      </fieldset>
+      <fieldset class="setting">
+        <label for="numbers">Include numbers</label>
+        <input type="checkbox" id="numbers" checked />
+      </fieldset>
+      <fieldset class="setting">
+        <label for="symbols">Include symbols</label>
+        <input type="checkbox" id="symbols" checked />
+      </fieldset>
+      <button class="btn btn-large" type="button" id="generate">
+        Generate password
+      </button>
+    </form>
+  </div>
 </body>
+
+</html>
